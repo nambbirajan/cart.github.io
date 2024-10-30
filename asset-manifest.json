@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nambbirajan/cart-app.git/static/css/main.e8c9bbf2.css",
+    "main.js": "/nambbirajan/cart-app.git/static/js/main.27aeffe1.js",
+    "index.html": "/nambbirajan/cart-app.git/index.html",
+    "main.e8c9bbf2.css.map": "/nambbirajan/cart-app.git/static/css/main.e8c9bbf2.css.map",
+    "main.27aeffe1.js.map": "/nambbirajan/cart-app.git/static/js/main.27aeffe1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8c9bbf2.css",
+    "static/js/main.27aeffe1.js"
+  ]
+}

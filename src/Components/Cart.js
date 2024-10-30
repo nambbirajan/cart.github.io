@@ -12,9 +12,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleProduct = ()=>{
-      navigate('/product')
-  }
+ 
   const handleCloseCart = ()=>{
     navigate(-1);
   }

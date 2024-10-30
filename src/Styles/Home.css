@@ -1,0 +1,113 @@
+.homepage{
+    margin: 50px;
+    margin-top: 160px;
+    margin-left: 90px;
+    margin-right: 470px;
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: start;
+    background:linear-gradient(to left,rgba(0,0,0,0),rgba(138, 133, 133, 0.7) );
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .home-h1{
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    /* color:#C82100; */
+    color: #2A2B31;
+  }
+  
+  .home-p{
+    /* display: inline-block; */
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+  
+  .btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    color: #0574f3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid white;
+    color: #212121;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+  
+  
+  @media screen and (max-width:600px) {
+    .homepage{
+      margin: 50px;
+      margin-top: 160px;
+      /* margin-left: 90px; */
+      /* margin-right: 470px; */
+      display: flex;
+      justify-content: start;
+      /* align-items: center; */
+      flex-direction: column;
+      text-align: start;
+      background:linear-gradient(to left,rgba(0,0,0,0),rgba(24, 105, 220, 0.7) );
+      border-radius: 20px;
+      padding: 20px;
+    }
+  
+  }

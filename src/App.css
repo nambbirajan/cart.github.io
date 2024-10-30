@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: rgb(32, 31, 31);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #0e049b;
+  
+}
+.search-bar{
+  flex-grow: 1;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+.search-bar input {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-bar input:focus {
+  width: 600px;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 200px;
+  }
+  .search-bar input:focus {
+    width: 250px;
+  }
+}
+
+.navbar-cart {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.cart-icon span {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(3, 23, 0);
+}
+
+.cart-dropdown {
+  position: absolute; /* Position it relative to the nearest positioned ancestor */
+  right: 0; /* Aligns to the right */
+  top: 50px; /* Adjust as needed */
+  background: white; /* Dropdown background */
+  border: 1px solid #ddd; /* Light border for definition */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  z-index: 999; /* Keep it on top of other elements */
+  width: 300px; /* Fixed width */
+  max-height: 400px; /* Max height */
+  overflow-y: auto; /* Allow scrolling if too many items */
+  padding: 10px; /* Padding inside the dropdown */
+}
+
+.cart-item {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0; /* Spacing between items */
+  border-bottom: 1px solid #ddd; /* Divider line */
+}
+
+.cart-item:last-child {
+  border-bottom: none; 
+}
+
+.cart-item img {
+  margin-right: 10px; 
+}
+
+.item-details {
+  flex-grow: 1; 
+}
+
+.item-details p {
+  margin: 0; 
+}
+
+.remove-items {
+  cursor: pointer; 
+  color: red; 
+  margin-left: 10px; 
+}
+
+.remove-items:hover {
+  color: darkred; /* Change color on hover for effect */
+}
